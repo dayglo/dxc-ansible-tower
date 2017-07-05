@@ -1,0 +1,18 @@
+- hosts: localhost
+  tasks:
+
+    - name: Create tower team
+      tower_team:
+        name: Synergy POC team
+        description: DXC's most handsome dudes
+        organization: Default
+        state: present
+
+    - name: Add tower project
+      tower_project:
+        name: "Ansible Synergy Project"
+        description: "Synergy playbooks"
+        organization: "Default"
+        state: present
+        scm_url: https://github.com/jzl2w8/AnsibleSynergy.git
+        scm_type: git
