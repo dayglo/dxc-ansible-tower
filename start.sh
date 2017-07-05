@@ -11,6 +11,7 @@ docker run -d \
 	--name tower \
 	-v "$SCRIPTPATH/license.txt":/etc/tower/license \
 	-v tower_certs:/certs \
+	-e TOWER_INIT_SCM_URL=https://github.com/dayglo/synergy-poc-setup \
 	dayglo/dxc-ansible-tower:3.1.1.1
 
 docker logs -f tower
