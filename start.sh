@@ -13,6 +13,7 @@ docker run -d \
 	-v tower_certs:/certs \
 	-e TOWER_INIT_SCM_URL=https://github.com/dayglo/synergy-poc-setup \
 	--restart=always \
+	--privileged \
 	dayglo/dxc-ansible-tower:3.1.1.1
 
 docker logs -f tower
