@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ -n "$ONEVIEWSDK_IP" ] ; then
+	echo AWX_TASK_ENV[\'ONEVIEWSDK_IP\']=\'$ONEVIEWSDK_IP\' >> /etc/tower/settings.py
+fi
+
+if [ -n "$ONEVIEWSDK_USERNAME" ] ; then
+	echo AWX_TASK_ENV[\'ONEVIEWSDK_USERNAME\']=\'$ONEVIEWSDK_USERNAME\' >> /etc/tower/settings.py
+fi
+
+if [ -n "$ONEVIEWSDK_PASSWORD" ] ; then
+	echo AWX_TASK_ENV[\'ONEVIEWSDK_PASSWORD\']=\'$ONEVIEWSDK_PASSWORD\' >> /etc/tower/settings.py
+fi
