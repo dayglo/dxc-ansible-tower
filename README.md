@@ -1,6 +1,7 @@
-DXC configured Ansible Tower image
+#DXC configured Ansible Tower image
 
-Before starting the image you need a licence file as described in 
+Before you start you need ansible-tower:3.1.1 built from https://github.com/dayglo/ansible-tower-docker
+
 ### 1. Get the repo
 ```
 git clone https://github.com/dayglo/dxc-ansible-tower.git
