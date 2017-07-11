@@ -2,10 +2,11 @@
 
 Before you start you need ansible-tower:3.1.1 built from https://github.com/dayglo/ansible-tower-docker
 
-### 1. Get the repo
+### 1. Get and build the repo
 ```
 git clone https://github.com/dayglo/dxc-ansible-tower.git
 cd ansible-tower
+./build.sh
 ```
 
 ### 2. Get a license
