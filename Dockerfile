@@ -9,7 +9,7 @@ RUN . /var/lib/awx/venv/ansible/bin/activate &&\
 	pip install git+https://github.com/HewlettPackard/python-hpOneView.git && \ 
 	pip install hpICsp 
 
-RUN git clone --branch v3.1.1 https://github.com/HewlettPackard/oneview-ansible.git /opt/oneview-ansible
+RUN git clone https://github.com/HewlettPackard/oneview-ansible.git /opt/oneview-ansible
 
 #RUN echo $ANSIBLE_LIBRARY > /var/lib/awx/venv/ansible/local/lib/python2.7/site-packages/ansible_library.pth
 
