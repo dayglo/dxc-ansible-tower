@@ -1,4 +1,4 @@
-#DXC configured Ansible Tower image
+# DXC configured Ansible Tower image
 
 Before you start you need ansible-tower:3.1.1 built from https://github.com/dayglo/ansible-tower-docker
 
