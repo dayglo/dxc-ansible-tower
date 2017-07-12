@@ -14,15 +14,10 @@ RUN git clone https://github.com/HewlettPackard/oneview-ansible.git /opt/oneview
 	mkdir -p /usr/lib/python2.7/dist-packages/ansible/modules/dxc_custom_oneview-ansible &&\
 	mv /opt/oneview-ansible/library/* /usr/lib/python2.7/dist-packages/ansible/modules/dxc_custom_oneview-ansible
 
-
-
 #RUN git clone https://github.com/HewlettPackard/oneview-ansible.git /opt/oneview-ansible
 #RUN echo $ANSIBLE_LIBRARY > /var/lib/awx/venv/ansible/local/lib/python2.7/site-packages/ansible_library.pth
 RUN echo AWX_TASK_ENV[\'ANSIBLE_LIBRARY\']=\'$ANSIBLE_LIBRARY\' >> /etc/tower/settings.py
-RUN echo ANSIBLE LIBRARY IS !!!! $ANSIBLE_LIBRARY 
-
-
-
+RUN echo ANSIBLE LIBRARY IS !!!! $ANSIBLE_LIBRARY
 
 COPY userstart /userstart
 RUN chmod +x ./userstart
