@@ -10,3 +10,5 @@ fi
 if [ -n "$ONEVIEWSDK_PASSWORD" ] ; then
 	echo AWX_TASK_ENV[\'ONEVIEWSDK_PASSWORD\']=\'$ONEVIEWSDK_PASSWORD\' >> /etc/tower/settings.py
 fi
+
+/usr/bin/ansible-tower-service restart
