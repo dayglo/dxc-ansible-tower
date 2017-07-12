@@ -21,5 +21,3 @@ RUN echo ANSIBLE LIBRARY IS !!!! $ANSIBLE_LIBRARY
 
 COPY userstart /userstart
 RUN chmod +x ./userstart
-
-COPY creds.json /opt/
